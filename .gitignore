@@ -1,2 +1,5 @@
 # editor specific
 .vscode
+
+# packages
+node_modules
