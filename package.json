@@ -1,6 +1,6 @@
 {
   "name": "ckeditor-cloudinary-uploader-adapter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This is a simple package that helps upload images from ckeditor to cloudinary",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
