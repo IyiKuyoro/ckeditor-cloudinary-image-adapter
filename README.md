@@ -1,0 +1,1 @@
+# ckeditor-Cloudinary-Upload-Adapter
