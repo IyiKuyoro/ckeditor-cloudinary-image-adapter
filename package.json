@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
     "test": "jest"
   },
   "repository": {
@@ -30,6 +32,9 @@
   },
   "homepage": "https://github.com/IyiKuyoro/ckeditor-cloudinary-image-adapter#readme",
   "devDependencies": {
+    "prettier": "^1.17.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.4.5"
   }
 }
