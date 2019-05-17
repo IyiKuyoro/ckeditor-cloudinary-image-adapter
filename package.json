@@ -3,7 +3,13 @@
   "version": "0.0.1",
   "description": "This is a simple package that helps upload images from ckeditor to cloudinary",
   "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -22,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/IyiKuyoro/ckeditor-cloudinary-image-adapter/issues"
   },
-  "homepage": "https://github.com/IyiKuyoro/ckeditor-cloudinary-image-adapter#readme"
+  "homepage": "https://github.com/IyiKuyoro/ckeditor-cloudinary-image-adapter#readme",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  }
 }
