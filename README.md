@@ -1,4 +1,4 @@
-# ckeditor-Cloudinary-Upload-Adapter
+# ckeditor-Cloudinary-Upload-Adapter  [![npm version](https://badge.fury.io/js/ckeditor-cloudinary-uploader-adapter.svg)](https://badge.fury.io/js/ckeditor-cloudinary-uploader-adapter)
 
 This package is a custom image upload adapter built for [ckeditor](https://ckeditor.com/). It makes use of XHR under the hood in uploading images to cloudinary using the cloud name and upload preset you set. It was built using instructions than can be found [here](https://ckeditor.com/docs/ckeditor5/latest/framework/guides/deep-dive/upload-adapter.html) and [here](https://cloudinary.com/documentation/angular_image_and_video_upload#pure_javascript), bringing two powerful tools to work together.
 

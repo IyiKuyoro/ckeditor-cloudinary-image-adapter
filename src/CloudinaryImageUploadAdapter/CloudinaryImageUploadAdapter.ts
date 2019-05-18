@@ -85,7 +85,7 @@ export class CloudinaryImageUploadAdapter {
       const len = this.sizes.length;
       this.sizes.forEach((size: number, index: number) => {
         if (index !== len - 1) {
-          imageObject[size.toString()] = `${splitUrl.firstHalf}w_${size},c_scale${splitUrl.secondHalf}`;
+          imageObject[size.toString()] = `${splitUrl.firstHalf}w_${size}%2Cc_scale${splitUrl.secondHalf}`;
         } else {
           imageObject[size.toString()] = defaultImageUrl;
         }
