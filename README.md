@@ -15,6 +15,7 @@ npm i ckeditor-cloudinary-image-adapter
 ```
 
 - Importing the upload adapter
+
 ```javascript
 import { CloudinaryImageUploadAdapter } from 'ckeditor-cloudinary-uploader-adapter';
 ```
@@ -39,6 +40,25 @@ const config = {
 ```
 
 That should get your image adapter up and running.
+
+## Adding responsive image support
+
+You may wish to support responsive images. This could not be easier. Simply add an array of image sizes you wish to use as the fourth parameter of the contructor. 
+
+**Please note that you may have to use the editor to display the rich text content for reading and ensure it is not editable to see the effect of the responsive images when you resize your window.**
+
+```javascript
+imagePluginFactory(editor) {
+  editor.plugins.get( 'FileRepository' ).createUploadAdapter = ( loader ) => {
+    return new CloudinaryImageUploadAdapter(
+      loader,
+      'your_cloud_name',
+      'your_unsigned_upload_preset',
+      [ 160, 500, 1000, 1052 ]
+     );
+  };
+}
+```
 
 ## Documentation
 
