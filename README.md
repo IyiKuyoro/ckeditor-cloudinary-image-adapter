@@ -14,6 +14,11 @@ This package is a custom image upload adapter built for [ckeditor](https://ckedi
 npm i ckeditor-cloudinary-image-adapter
 ```
 
+- Importing the upload adapter
+```javascript
+import { CloudinaryImageUploadAdapter } from 'ckeditor-cloudinary-uploader-adapter';
+```
+
 - After installing the package, you would need to setup a factory function that creates the adapter that would be added to your editor's config object. ([Please review this doc on how to setup your editor](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/overview.html)). Below is a sample function that demonstrates that. Keep in mind that depending on the frontend library or framework you use, where you place the function below may be different.
 
 ```javascript
